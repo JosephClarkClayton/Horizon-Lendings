@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <div class='paymentScreen'>
+        <div class='pay_row1'>
+            <img src="img/chemin.png" alt="progress" class='progressCircles'>
+        </div>
+        <div class='mainContent'>
+            <h1 class='fin_options'>How much financing do you need</h1>
+            <span></span>
+            <span id='MinNumber' class='numLeftRight'><span>&#x20AC</span>5.000</span><span id='MaxNumber' class='numLeftRight'><span>&#x20AC</span>150.000</span><span></span>
+
+            <div class="slidecontainer">
+                <span class='circLeftOr'></span>
+                <span class='circLeftOr'></span>
+                <div id='moveable'>
+                    <span>&#x20AC</span>
+                    <span id='move_number'>100</span>
+                </div>
+
+                <input type="range" min="5" max="150" value="75" class="slider" id="myRange">
+
+            </div>
+            <h1 class='fin_options'>How long would you like to repay this <br />amount</h1>
+            <div class="slidecontainer">
+                <span class='circLeftOr c1'></span>
+                <span class='circLeftOr c1'></span>
+                <div id='moveable_years'>
+
+                    <span id='move_years'></span><span>years</span>
+                </div>
+                <span id='leftyears' class='numLeftRight yearsLeft_right'>1 year</span>
+                <span id='rigthyears' class='numLeftRight yearsLeft_right'>15 years</span>
+                <input type="range" min="1" max="15" value="7" class="slider" id="myRange1">
+            </div>
+            <div class='monthlyBox'>
+                <h1 class='fin_options'>Estimated monthly</h1>
+                <span>payment* : <span class='mult_number'> <span>&#x20AC</span>300</span></span>
+            </div>
+
+        </div>
+        <div class='bottomContPayment'>
+            <h6 class='smallText'>* The monthly payments indicated are purely indicative and based on</br> the average
+                rate
+                observed on the market for the indicated characteristics</h6>
+            <hr class='shortLine paymentScreen_hr'>
+            <h3 class='gracePer'>Grace period until the end of your program?</h3>
+            <div>
+                <div class="container_radio_pay">
+
+
+
+                    <ul>
+                        <li>
+                            <label for="f-option">YES</label>
+                            <input type="radio" id="f-option" name="selector">
+
+
+                            <div class="check"></div>
+                        </li>
+
+                        <li>
+                            <label for="s-option">NO</label>
+                            <input type="radio" id="s-option" name="selector">
+
+
+                            <div class="check">
+                                <div class="inside"></div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+
+            </div>
+            <hr class='shortLine paymentScreen_hr'>
+            <h3 class='currentBank'>Your current bank(s)</h3>
+
+            <div class='banksImages'>
+                <img src="img/GroupBanks.png" alt="Banks">
+                <img src="img/Bitmap.png" alt="HSBC">
+                <img src="img/Bitmap11.png" alt="LCL">
+            </div>
+            <button id='ContinueBTN' class='continue_btn'>Continue</button>
+        </div>
+    </div>
+
+    <script src='js/slider.js'></script>
+</body>
+
+</html>
