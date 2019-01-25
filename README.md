@@ -1,5 +1,5 @@
 # Horizon-Lendings
-Horizon Lending page for a client from upWork.com
+Horizon Lending page.
 
 ![Langing Page](https://github.com/edmlbox/Horizon-Lendings/blob/master/img/hor1.png)
 ![My Account Page](https://github.com/edmlbox/Horizon-Lendings/blob/master/img/hor2.png)
